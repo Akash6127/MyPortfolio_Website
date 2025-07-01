@@ -1,0 +1,104 @@
+/* Navbar.css */
+
+.navbar {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  top: 0;
+  padding: 20px 40px;
+  background-color: #121212;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00bfff;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+/* Desktop nav links */
+.desktop-links {
+  display: flex;
+  gap: 25px;
+}
+
+.desktop-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.desktop-links a:hover {
+  color: #00bfff;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  gap: 15px;
+}
+
+.mobile-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.mobile-menu a:hover {
+  color: #00bfff;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .desktop-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

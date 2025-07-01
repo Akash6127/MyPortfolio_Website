@@ -1,0 +1,94 @@
+/* ---------- Main Container ---------- */
+.about-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 100px 40px;
+  background-color: #121212;
+  color: white;
+  flex-wrap: wrap;
+ 
+}
+
+/* ---------- Profile Image ---------- */
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  width: 500px;
+  border-radius: 50%;
+  border: 4px solid #00bfff;
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.4);
+  transition: transform 0.3s ease;
+}
+
+/* ---------- About Text ---------- */
+.about-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  color: #00bfff;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ---------- Skills (Circular Progress Bars) ---------- */
+.skills-circles {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.circle-skill {
+  width: 100px;
+  text-align: center;
+  color: #ccc;
+}
+
+.circle-skill span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* ---------- Responsive Layout for Small Screens ---------- */
+@media screen and (max-width: 900px) {
+  .about-container {
+    flex-direction: column-reverse; /* 🟢 Text above image */
+    align-items: center;
+    padding: 80px 20px;
+    gap: 40px;
+    /* margin-top: 75px; */
+  }
+
+  .about-image img {
+    width: 300px;
+    margin-bottom: 0;
+  }
+
+  .skills-circles {
+    justify-content: center;
+  }
+
+  .about-text {
+    text-align: center;
+     margin-top: 75px;
+  }
+
+  .circle-skill {
+    width: 80px;
+  }
+}
