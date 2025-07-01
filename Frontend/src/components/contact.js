@@ -14,7 +14,7 @@ const ContactUs = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/user_api/contact/post-message', {
+      const response = await axios.post('https://myportfolio-website-tfr6.onrender.com/user_api/contact/post-message', {
         first_name: firstname,
         last_name: lastname,
         email: email,
