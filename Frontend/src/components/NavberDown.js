@@ -36,7 +36,7 @@ const NavberDown = () => {
         <p>
           I'm a passionate MERN Stack Developer with experience in building modern, responsive websites using MongoDB, Express.js, React.js, Node.js. I love bringing creative ideas to life in the browser!
         </p>
-        <button className="vibrant-resume-btn">📄 Download Resume</button>
+        <button className="vibrant-resume-btn"   onClick={() => window.open("https://drive.google.com/file/d/1w2FJrqOSu4F9CajIJ4RM6ilsAGxwBiX-/view?usp=drive_link", '_blank')}>📄 Download Resume</button>
       </motion.div>
 
       <motion.div
